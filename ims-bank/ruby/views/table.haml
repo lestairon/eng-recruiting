@@ -1,0 +1,12 @@
+%table
+  %tr
+    %th Customer Name
+    %th Total Balance Checking accounts
+    %th Total Balance Saving accounts
+    %th Total Balance All accounts
+  - data.each do |id, user|
+    %tr
+      %td= user['name']
+      %td= user['checking'].to_f
+      %td= user['savings'].to_f
+      %td= user['total'].to_f

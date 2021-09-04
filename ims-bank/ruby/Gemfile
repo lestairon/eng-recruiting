@@ -1,9 +1,12 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem "sinatra", "~> 2.1"
-
-gem "sinatra-reloader", "~> 1.0"
+gem 'faraday', '~> 1.7.1'
+gem 'faraday_middleware', '~> 1.1.0'
+gem 'hamlit', '~> 2.15.1'
+gem 'monetize'
+gem 'sinatra', '~> 2.1'
+gem 'sinatra-reloader', '~> 1.0'
