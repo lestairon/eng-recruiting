@@ -4,9 +4,9 @@
     %th Total Balance Checking accounts
     %th Total Balance Saving accounts
     %th Total Balance All accounts
-  - data.each do |id, user|
+  - @users.each do |user|
     %tr
-      %td= user['name']
-      %td= user['checking'].to_f
-      %td= user['savings'].to_f
-      %td= user['total'].to_f
+      %td= user.name
+      %td= user.total_checking
+      %td= user.total_savings
+      %td= user.total
